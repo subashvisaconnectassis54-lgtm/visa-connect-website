@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visa Connect Assis</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+
+    <div class="brand">
+      <img src="assets/images/logo.jpeg" class="logo-img">
+    </div>
+
+    <nav class="nav-pill">
+
+      <a class="nav-item active" href="index.html">🏠 Home</a>
+      <a class="nav-item" href="about.html">ℹ️ About</a>
+      <a class="nav-item" href="australia.html"><span class="fi fi-au"></span> Australia</a>
+      <a class="nav-item" href="uk.html"><span class="fi fi-gb"></span> UK</a>
+      <a class="nav-item" href="usa.html"><span class="fi fi-us"></span> USA</a>
+      <a class="nav-item" href="eu.html"><span class="fi fi-eu"></span> EU</a>
+      <a class="nav-item" href="contact.html">📞 Contact</a>
+
+    </nav>
+
+    <div class="contact-box">
+      <a href="https://wa.me/918722169966" target="_blank" class="whatsapp-link">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+
+      <a href="tel:+918722169966" class="call-btn">
+        <i class="fas fa-phone"></i>
+      </a>
+    </div>
+
+  </header>
+
+  <!-- HERO SECTION -->
+
+  <section class="hero">
+    <div class="brand">
+      <img src="assets/images/logo.jpeg" class="logo-img" alt="Company Logo">
+    </div>
+
+    <!-- overlay -->
+
+    <div class="hero-overlay"></div>
+
+
+    <!-- LEFT IMAGE REEL -->
+
+    <div class="reel reel-left">
+      <div class="reel-track">
+
+        <img src="assets/images/usa.jpg">
+        <img src="assets/images/uk.jpg">
+        <img src="assets/images/australia.jpg">
+        <img src="assets/images/logo.jpeg">
+        <img src="assets/images/EU.jpg">
+        <img src="assets/images/singapore.webp">
+
+        <!-- duplicate for infinite scroll -->
+
+        <img src="assets/images/usa.jpg">
+        <img src="assets/images/uk.jpg">
+        <img src="assets/images/logo.jpeg">
+        <img src="assets/images/australia.jpg">
+        <img src="assets/images/EU.jpg">
+        <img src="assets/images/singapore.webp">
+
+      </div>
+    </div>
+
+
+    <!-- RIGHT IMAGE REEL -->
+
+    <div class="reel reel-right">
+      <div class="reel-track">
+
+        <img src="assets/images/dubai.avif">
+        <img src="assets/images/logo.jpeg">
+        <img src="assets/images/france.webp">
+        <img src="assets/images/germany.jpeg">
+        <img src="assets/images/italy.jpg">
+        <img src="assets/images/japan.webp">
+
+        <!-- duplicate -->
+
+        <img src="assets/images/dubai.avif">
+        <img src="assets/images/logo.jpeg">
+        <img src="assets/images/france.webp">
+        <img src="assets/images/germany.jpeg">
+        <img src="assets/images/italy.jpg">
+        <img src="assets/images/japan.webp">
+
+      </div>
+    </div>
+
+
+    <!-- HERO CONTENT -->
+
+    <div class="hero-content">
+
+      <h1 id="company-name">Visa Connect</h1>
+      <h1 id="typing"></h1>
+
+      <p class="hero-sub">
+        Professional visa & passport assistance for individuals, families and
+        businesses. Fast documentation, appointment booking and complete
+        application guidance.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="contact.html" class="btn-primary">Start Your Application</a>
+        <a href="about.html" class="btn-secondary">Learn More</a>
+      </div>
+
+      <div class="hero-trust">
+        <span>✓ Fast Documentation</span>
+        <span>✓ Embassy Compliant</span>
+        <span>✓ Trusted Assistance</span>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- TAGLINE / COUNTRIES -->
+  <section class="tagline" id="tagline">
+
+    <div class="tagline-container">
+      <h2>Global Visa & Passport Assistance</h2>
+
+      <p class="tagline-desc">
+        Professional support for passport applications, renewals and visa
+        documentation across major travel destinations.
+      </p>
+
+      <!-- COUNTRY SELECTOR -->
+
+      <div class="country-selector">
+
+        <button class="country-btn active" data-country="usa">🇺🇸 USA</button>
+        <button class="country-btn" data-country="uk">🇬🇧 UK</button>
+        <button class="country-btn" data-country="australia">🇦🇺 Australia</button>
+        <button class="country-btn" data-country="schengen">🇪🇺 Schengen</button>
+        <button class="country-btn" data-country="canada">🇨🇦 Canada</button>
+        <button class="country-btn" data-country="dubai">🇦🇪 Dubai</button>
+        <button class="country-btn" data-country="singapore">🇸🇬 Singapore</button>
+
+      </div>
+
+      <!-- COUNTRY DISPLAY -->
+
+      <div class="country-display">
+
+        <div class="country-image">
+          <img id="countryImg" src="assets/images/usa.jpg">
+        </div>
+
+        <div class="country-info">
+
+          <h3 id="countryTitle">United States Visa</h3>
+
+          <p id="countryText">
+            Assistance for B1/B2 visitor visas including documentation,
+            DS-160 form preparation, appointment booking and interview guidance.
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- COUNTRIES WE SERVE -->
+  <section class="countries">
+
+    <h2>Countries We Serve</h2>
+    <p class="countries-sub">
+      Visa assistance for the world's most popular travel destinations
+    </p>
+
+    <div class="countries-slider">
+
+      <div class="countries-track">
+
+        <!-- SET 1 -->
+
+        <div class="country-card usa">
+          <div class="overlay"></div>
+          <div class="country-info">
+            <span>🇺🇸</span>
+            <h3>United States</h3>
+            <p>B1/B2 Visa</p>
+          </div>
+        </div>
+
+        <div class="country-card uk">
+          <div class="overlay"></div>
+          <div class="country-info">
+            <span>🇬🇧</span>
+            <h3>United Kingdom</h3>
+            <p>Tourist Visa</p>
+          </div>
+        </div>
+
+        <div class="country-card australia">
+          <div class="overlay"></div>
+          <div class="country-info">
+            <span>🇦🇺</span>
+            <h3>Australia</h3>
+            <p>Visitor Visa</p>
+          </div>
+        </div>
+
+        <div class="country-card canada">
+          <div class="overlay"></div>
+          <div class="country-info">
+            <span>🇨🇦</span>
+            <h3>Canada</h3>
+            <p>Visitor Visa</p>
+          </div>
+        </div>
+
+        <div class="country-card eu">
+          <div class="overlay"></div>
+          <div class="country-info">
+            <span>🇪🇺</span>
+            <h3>Schengen</h3>
+            <p>EU Travel Visa</p>
+          </div>
+        </div>
+
+        <div class="country-card singapore">
+          <div class="overlay"></div>
+          <div class="country-info">
+            <span>🇸🇬</span>
+            <h3>Singapore</h3>
+            <p>Tourist Visa</p>
+          </div>
+        </div>
+
+        <div class="country-card dubai">
+          <div class="overlay"></div>
+          <div class="country-info">
+            <span>🇦🇪</span>
+            <h3>Dubai</h3>
+            <p>Tourist Visa</p>
+          </div>
+        </div>
+
+
+        <!-- SET 2 (DUPLICATE FOR INFINITE LOOP) -->
+
+        <div class="country-card usa">
+          <div class="overlay"></div>
+          <div class="country-info">
+            <span>🇺🇸</span>
+            <h3>United States</h3>
+            <p>B1/B2 Visa</p>
+          </div>
+        </div>
+
+        <div class="country-card uk">
+          <div class="overlay"></div>
+          <div class="country-info">
+            <span>🇬🇧</span>
+            <h3>United Kingdom</h3>
+            <p>Tourist Visa</p>
+          </div>
+        </div>
+
+        <div class="country-card australia">
+          <div class="overlay"></div>
+          <div class="country-info">
+            <span>🇦🇺</span>
+            <h3>Australia</h3>
+            <p>Visitor Visa</p>
+          </div>
+        </div>
+
+        <div class="country-card canada">
+          <div class="overlay"></div>
+          <div class="country-info">
+            <span>🇨🇦</span>
+            <h3>Canada</h3>
+            <p>Visitor Visa</p>
+          </div>
+        </div>
+
+        <div class="country-card eu">
+          <div class="overlay"></div>
+          <div class="country-info">
+            <span>🇪🇺</span>
+            <h3>Schengen</h3>
+            <p>EU Travel Visa</p>
+          </div>
+        </div>
+
+        <div class="country-card singapore">
+          <div class="overlay"></div>
+          <div class="country-info">
+            <span>🇸🇬</span>
+            <h3>Singapore</h3>
+            <p>Tourist Visa</p>
+          </div>
+        </div>
+
+        <div class="country-card dubai">
+          <div class="overlay"></div>
+          <div class="country-info">
+            <span>🇦🇪</span>
+            <h3>Dubai</h3>
+            <p>Tourist Visa</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services">
+    <h2>Our Services</h2>
+    <p class="services-sub">
+      Complete assistance for passport applications and international visa processing
+    </p>
+
+    <div class="service-container">
+      <div class="service-box">
+        <div class="service-icon">🛂</div>
+          <h3>Passport Services</h3>
+
+          <ul>
+            <li>New Passport – Normal & Tatkal appointments</li>
+            <li>Passport Renewal – Expired or expiring passports</li>
+            <li>Lost / Damaged Passport assistance</li>
+            <li>Child Passport processing</li>
+            <li>Name Change & corrections</li>
+          </ul>
+        </div>
+
+        <div class="service-box">
+          <div class="service-icon">✈️</div>
+          <h3>Visa Services</h3>
+
+          <ul>
+            <li>Tourist / Visitor Visa</li>
+            <li>Business Visa documentation</li>
+            <li>US Visa Services (B1/B2, Dropbox, Urgent)</li>
+            <li>Stamping & E-Visa processing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="cta-glow"></div>
+
+    <div class="cta-content">
+      <h2>Start Your Visa Process Today</h2>
+      <p>
+        Our experts guide you through documentation, embassy appointments
+        and application submission to ensure a smooth visa approval process.
+      </p>
+
+      <div class="cta-buttons">
+
+        <a href="contact.html" class="btn-primary">
+          Start Your Application
+        </a>
+
+        <a href="contact.html" class="btn-outline">
+          Free Consultation
+        </a>
+
+      </div>
+    </div>
+  </section>
+  
+  <div id="footer"></div>
+  <script src="js/main.js"></script>
+  
+</body>
+
+</html>
